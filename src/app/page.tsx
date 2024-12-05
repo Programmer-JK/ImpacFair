@@ -144,12 +144,15 @@ export default function Home() {
       </header>
 
       <main className="flex-grow">
-        <section id="div_titleImage" className="w-full">
-          <Image
-            src={headerImg}
-            className="w-full object-cover"
-            alt="banner image"
-          />
+        <section id="div_titleImage" className="w-full bg-white">
+          <div className="container mx-auto">
+            <Image
+              src={headerImg}
+              className="w-full mx-auto px-4"
+              alt="banner image"
+              priority
+            />
+          </div>
         </section>
 
         <section id="about" className="py-16">
