@@ -1,3 +1,4 @@
+import { FileDown } from "lucide-react";
 import React from "react";
 
 type ScheduleItem = {
@@ -7,6 +8,7 @@ type ScheduleItem = {
   speaker: string;
   isHighlighted: boolean;
   description?: string;
+  file?: string;
 };
 
 interface ScheduleDivProps {
@@ -27,7 +29,8 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
       {/* Header - Only visible on desktop */}
       <div className="hidden lg:grid lg:grid-cols-12 bg-gray-100 p-4 rounded-t-lg font-semibold">
         <div className="col-span-3">시간</div>
-        <div className="col-span-6">주제 및 내용</div>
+        <div className="col-span-5">주제 및 내용</div>
+        <div className="col-span-1">파일</div>
         <div className="col-span-3">발표자</div>
       </div>
 
@@ -50,10 +53,17 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
             </div>
 
             {/* Title Section */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-5">
               <h3 className="font-medium">{item.title}</h3>
               {item.description && (
                 <p className="text-sm">{item.description}</p>
+              )}
+            </div>
+            <div className="lg:col-span-1 text">
+              {item.file && (
+                <a href={item.file} download className="flex items-center">
+                  <FileDown />
+                </a>
               )}
             </div>
 

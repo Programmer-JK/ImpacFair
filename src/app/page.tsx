@@ -27,6 +27,7 @@ export default function Home() {
       title: "워크숍 개요 및 프로그램 소개",
       speaker: "사회자",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "13:40-14:10",
@@ -34,6 +35,7 @@ export default function Home() {
       title: "계량관리보고 개요 및 작성",
       speaker: "허철",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "14:10-14:40",
@@ -41,6 +43,7 @@ export default function Home() {
       title: "계량관리보고서 작성 및 오류",
       speaker: "김현진",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "14:40-15:20",
@@ -48,6 +51,7 @@ export default function Home() {
       title: "운영기록 작성 및 사찰 수검",
       speaker: "이충민",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "15:20-15:40",
@@ -62,6 +66,7 @@ export default function Home() {
       title: "계량관리보고서 작성 사례 및 현안",
       speaker: "KHNP(김우진), KNF(박혜지), KAERI(강주언)",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "16:40-17:10",
@@ -69,6 +74,7 @@ export default function Home() {
       title: "한-IAEA IMWG 회의 결과 및 후속조치",
       speaker: "차지환",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "17:10-17:30",
@@ -76,6 +82,7 @@ export default function Home() {
       title: "발전소 사찰 이행 현안",
       speaker: "KHNP(이혜진)",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "17:30-18:00",
@@ -83,6 +90,7 @@ export default function Home() {
       title: "계량관리보고 및 사찰 관련 개선사항",
       speaker: "전체",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
   ];
   const scheduleDataSecond = [
@@ -99,6 +107,7 @@ export default function Home() {
       title: "XML 개요 및 추진 계획",
       speaker: "김현진",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
     {
       time: "11:00-11:40",
@@ -107,6 +116,7 @@ export default function Home() {
       description: "- 향후 고려사항, 질의응답 등",
       speaker: "전체",
       isHighlighted: false,
+      file: "/file/test.pdf",
     },
   ];
 
