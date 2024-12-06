@@ -17,15 +17,6 @@ export function MobileNav() {
           <ul className="space-y-2">
             <li>
               <a
-                href="#about"
-                className="block py-2 hover:underline"
-                onClick={() => setIsOpen(false)}
-              >
-                소개
-              </a>
-            </li>
-            <li>
-              <a
                 href="#schedule"
                 className="block py-2 hover:underline"
                 onClick={() => setIsOpen(false)}

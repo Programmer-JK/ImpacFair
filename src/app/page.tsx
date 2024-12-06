@@ -57,8 +57,7 @@ export default function Home() {
       time: "15:40-16:40",
       duration: "60'",
       title: "계량관리보고서 작성 사례 및 현안",
-      speaker:
-        "KHNP 김우진 대리, KEPCO NF 박혜지 과장, KAERI 정주앙 선임연구원",
+      speaker: "KHNP 김우진 대리,KEPCO NF 박혜지 과장,KAERI 정주앙 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
@@ -121,11 +120,6 @@ export default function Home() {
           <h1 className="text-xl font-bold">KINAC 계량관리 보고 개선 워크숍</h1>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
-              {/* <li>
-                <a href="#about" className="hover:underline">
-                  소개
-                </a>
-              </li> */}
               <li>
                 <a href="#schedule" className="hover:underline">
                   일정
