@@ -1,13 +1,6 @@
 import Image from "next/image";
 
-import {
-  CalendarDays,
-  MapPin,
-  Users,
-  BookCheck,
-  FileDown,
-  File,
-} from "lucide-react";
+import { FileDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import headerImg from "@/images/workshop.jpg";
 import { MobileNav } from "@/components/mobile-nav";
@@ -155,70 +148,6 @@ export default function Home() {
             />
           </div>
         </section>
-
-        {/* <section id="about" className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">이벤트 소개</h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-5">
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <CalendarDays className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">날짜</h3>
-                  <p>2024년 12월 16일(월) - 17일(화)</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <MapPin className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">장소</h3>
-                  <p>올림픽파크텔(서울)</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <Users className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">참가자</h3>
-                  <p>안전조치 업무 담당자 및 관계자</p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-5">
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center">
-                  <BookCheck className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">주제 및 내용</h3>
-                  <div>
-                    <p>- 계량관리보고에 대한 원칙과 오류 사례 공유</p>
-                    <p>- IAEA 사전신고서 양식 및 구체적 내용에 대한 설명</p>
-                    <p>- 계량관리보고 양식 및 시스템 개선에 대한 의견 수렴</p>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6 flex flex-col items-center">
-                  <FileDown className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">참고자료</h3>
-                  <div className="flex flex-col gap-2">
-                    <a
-                      href="/file/test.pdf"
-                      download
-                      className="flex items-center gap-2"
-                    >
-                      <File /> 파일 1
-                    </a>
-                    <a
-                      href="/file/test.pdf"
-                      download
-                      className="flex items-center gap-2"
-                    >
-                      <File /> 파일 2
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section> */}
 
         <section id="schedule" className="bg-gray-100 py-16">
           <div className="container mx-auto px-4">
