@@ -32,16 +32,16 @@ export default function Home() {
     {
       time: "13:40-14:10",
       duration: "30'",
-      title: "계량관리보고 개요 및 작성",
-      speaker: "허철",
+      title: "계량관리보고 개요 및 작성 원칙",
+      speaker: "KINAC 허철 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
     {
       time: "14:10-14:40",
       duration: "30'",
-      title: "계량관리보고서 작성 및 오류",
-      speaker: "김현진",
+      title: "계량관리보고서 오류 및 수정",
+      speaker: "KINAC 김현진 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
@@ -49,7 +49,7 @@ export default function Home() {
       time: "14:40-15:20",
       duration: "40'",
       title: "운영기록 작성 및 사찰 수검",
-      speaker: "이충민",
+      speaker: "KINAC 이충민 책임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
@@ -64,7 +64,8 @@ export default function Home() {
       time: "15:40-16:40",
       duration: "60'",
       title: "계량관리보고서 작성 사례 및 현안",
-      speaker: "KHNP(김우진), KNF(박혜지), KAERI(강주언)",
+      speaker:
+        "KHNP 김우진 대리, KEPCO NF 박혜지 과장, KAERI 정주앙 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
@@ -72,32 +73,32 @@ export default function Home() {
       time: "16:40-17:10",
       duration: "30'",
       title: "한-IAEA IMWG 회의 결과 및 후속조치",
-      speaker: "차지환",
+      speaker: "KINAC 차지환 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
     {
       time: "17:10-17:30",
       duration: "20'",
-      title: "발전소 사찰 이행 현안",
-      speaker: "KHNP(이혜진)",
+      title: "IAEA 회의내용 및 사전신고 유의사항",
+      speaker: "KHNP 이혜진 과장",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
     {
       time: "17:30-18:00",
       duration: "35'",
-      title: "계량관리보고 및 사찰 관련 개선사항",
-      speaker: "전체",
+      title: "계량관리보고 및 사찰 관련 개선사항 회의",
+      speaker: "",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: "",
     },
   ];
   const scheduleDataSecond = [
     {
       time: "9:30-10:00",
       duration: "30'",
-      title: "2일차 등록",
+      title: "등록",
       speaker: "",
       isHighlighted: false,
     },
@@ -105,7 +106,7 @@ export default function Home() {
       time: "10:00-11:00",
       duration: "60'",
       title: "XML 개요 및 추진 계획",
-      speaker: "김현진",
+      speaker: "KINAC 김현진 선임연구원",
       isHighlighted: false,
       file: "/file/test.pdf",
     },
@@ -113,10 +114,10 @@ export default function Home() {
       time: "11:00-11:40",
       duration: "40'",
       title: "개선 추진 계획에 대한 논의",
-      description: "- 향후 고려사항, 질의응답 등",
-      speaker: "전체",
+      description: "",
+      speaker: "",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: "",
     },
   ];
 
@@ -127,11 +128,11 @@ export default function Home() {
           <h1 className="text-xl font-bold">KINAC 계량관리 보고 개선 워크숍</h1>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
-              <li>
+              {/* <li>
                 <a href="#about" className="hover:underline">
                   소개
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#schedule" className="hover:underline">
                   일정
@@ -155,7 +156,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-16">
+        {/* <section id="about" className="py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">이벤트 소개</h2>
             <div className="grid md:grid-cols-3 gap-8 mb-5">
@@ -217,11 +218,11 @@ export default function Home() {
               </Card>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="schedule" className="bg-gray-100 py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">이벤트 일정</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">세부 일정</h2>
             <div className="space-y-4">
               <Card>
                 <CardContent className="p-6">
@@ -237,6 +238,25 @@ export default function Home() {
                     둘째 날 - 12월 17일 화요일
                   </h3>
                   <ScheduleDiv data={scheduleDataSecond} />
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">참고자료</h3>
+                  <div className="w-full max-w-4xl mx-auto grid grid-cols-12 bg-gray-100 p-4 rounded-lg">
+                    <div className="col-span-11">
+                      IAEA 안전조치 용어집 (2022 Edition)
+                    </div>
+                    <div className="col-span-1">
+                      <a
+                        href="/file/test.pdf"
+                        download
+                        className="flex items-center"
+                      >
+                        <FileDown />
+                      </a>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>

@@ -40,21 +40,21 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
           <div
             key={index}
             className={`p-4 rounded-lg shadow ${
-              item.isHighlighted ? "bg-amber-50" : "bg-white"
+              item.isHighlighted ? "bg-gray-200" : "bg-white"
             } 
                        lg:grid lg:grid-cols-12 lg:gap-4 space-y-2 lg:space-y-0`}
           >
             {/* Time Section */}
             <div className="lg:col-span-3 flex lg:block justify-between items-center">
               <span className="font-medium">{item.time}</span>
-              <span className="text-gray-500 text-sm lg:ml-2">
+              {/* <span className="text-gray-500 text-sm lg:ml-2">
                 ({item.duration})
-              </span>
+              </span> */}
             </div>
 
             {/* Title Section */}
             <div className="lg:col-span-5">
-              <h3 className="font-medium">{item.title}</h3>
+              <h3 className="text-lg">{item.title}</h3>
               {item.description && (
                 <p className="text-sm">{item.description}</p>
               )}
@@ -68,6 +68,9 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
             </div>
 
             {/* Speaker Section */}
+            {/* {item.speaker.split(", ").forEach((v) => (
+              <span>{v}</span>
+            ))} */}
             <div className="lg:col-span-3 text-gray-600">{item.speaker}</div>
           </div>
         ))}
