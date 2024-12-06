@@ -73,7 +73,7 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
             ))} */}
             <div className="lg:col-span-3 flex flex-col text-gray-600">
               {item.speaker.split(",").map((v, idx) => (
-                <span>{v}</span>
+                <span key={idx}>{v}</span>
               ))}
             </div>
           </div>
