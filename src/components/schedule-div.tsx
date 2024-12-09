@@ -5,10 +5,12 @@ type ScheduleItem = {
   time: string;
   duration: string;
   title: string;
-  speaker: string;
+  speakerInfo?: {
+    speaker: string;
+    file: string;
+  }[];
   isHighlighted: boolean;
   description?: string;
-  file?: string[];
 };
 
 interface ScheduleDivProps {
@@ -59,23 +61,44 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
                 <p className="text-sm">{item.description}</p>
               )}
             </div>
-            <div className="lg:col-span-1 text">
-              {item.file &&
-                item.file.map((v, idx) => (
-                  <a key={idx} href={v} download className="flex items-center">
-                    <FileDown />
-                  </a>
-                ))}
+            <div className="hidden lg:col-span-1 lg:flex flex-col text">
+              {item.speakerInfo &&
+                item.speakerInfo.map(
+                  (v, idx) =>
+                    v.file && (
+                      <a
+                        key={idx}
+                        href={v.file}
+                        download
+                        className="flex items-center"
+                      >
+                        <FileDown />
+                      </a>
+                    )
+                )}
             </div>
-
-            {/* Speaker Section */}
-            {/* {item.speaker.split(", ").forEach((v) => (
-              <span>{v}</span>
-            ))} */}
-            <div className="lg:col-span-3 flex flex-col text-gray-600">
-              {item.speaker.split(",").map((v, idx) => (
-                <span key={idx}>{v}</span>
-              ))}
+            <div className="hidden lg:col-span-3 lg:flex flex-col text-gray-600">
+              {item.speakerInfo &&
+                item.speakerInfo.map(
+                  (v, idx) => v.speaker && <span key={idx}>{v.speaker}</span>
+                )}
+            </div>
+            <div className="lg:hidden flex flex-col text-gray-600">
+              {item.speakerInfo &&
+                item.speakerInfo.map((v, idx) => (
+                  <div key={idx} className="flex">
+                    {v.file && (
+                      <a
+                        href={v.file}
+                        download
+                        className="flex items-center mr-2"
+                      >
+                        <FileDown />
+                      </a>
+                    )}
+                    {v.speaker && <span>{v.speaker}</span>}
+                  </div>
+                ))}
             </div>
           </div>
         ))}
