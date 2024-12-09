@@ -8,7 +8,7 @@ type ScheduleItem = {
   speaker: string;
   isHighlighted: boolean;
   description?: string;
-  file?: string;
+  file?: string[];
 };
 
 interface ScheduleDivProps {
@@ -60,11 +60,12 @@ const ScheduleDiv = ({ data = [] }: ScheduleDivProps) => {
               )}
             </div>
             <div className="lg:col-span-1 text">
-              {item.file && (
-                <a href={item.file} download className="flex items-center">
-                  <FileDown />
-                </a>
-              )}
+              {item.file &&
+                item.file.map((v, idx) => (
+                  <a key={idx} href={v} download className="flex items-center">
+                    <FileDown />
+                  </a>
+                ))}
             </div>
 
             {/* Speaker Section */}

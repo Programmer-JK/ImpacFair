@@ -20,7 +20,7 @@ export default function Home() {
       title: "워크숍 개요 및 프로그램 소개",
       speaker: "사회자",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      // file: ["/file/test.pdf"],
     },
     {
       time: "13:40-14:10",
@@ -28,7 +28,7 @@ export default function Home() {
       title: "계량관리보고 개요 및 작성 원칙",
       speaker: "KINAC 허철 선임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/계량관리보고 개요 및 작성 원칙_KINAC_허철.pdf"],
     },
     {
       time: "14:10-14:40",
@@ -36,15 +36,15 @@ export default function Home() {
       title: "계량관리보고서 오류 및 수정",
       speaker: "KINAC 김현진 선임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/계량관리보고서 오류 및 수정_KINAC_김현진.pdf"],
     },
     {
       time: "14:40-15:20",
       duration: "40'",
       title: "운영기록 작성 및 사찰 수검",
-      speaker: "KINAC 이충민 책임연구원",
+      speaker: "KINAC 이승민 책임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/운영기록 작성 및 사찰 수검_KINAC_이승민.pdf"],
     },
     {
       time: "15:20-15:40",
@@ -59,7 +59,11 @@ export default function Home() {
       title: "계량관리보고서 작성 사례 및 현안",
       speaker: "KHNP 김우진 대리,KEPCO NF 박혜지 과장,KAERI 정주앙 선임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: [
+        "/file/보고 사례 및 현안-중수로 사용후핵연료 건식이송_KHNP_김우진.pdf",
+        "/file/보고 사례 및 현안-폐기물_한전원자력연료_박혜지.pdf",
+        "/file/보고 사례 및 현안-RM RP_KAERI_정주앙.pdf",
+      ],
     },
     {
       time: "16:40-17:10",
@@ -67,7 +71,7 @@ export default function Home() {
       title: "한-IAEA IMWG 회의 결과 및 후속조치",
       speaker: "KINAC 차지환 선임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/한-IAEA IMWG.JRM 회의 결과 및 후속조치_KINAC_차지환.pdf"],
     },
     {
       time: "17:10-17:30",
@@ -75,7 +79,7 @@ export default function Home() {
       title: "IAEA 회의내용 및 사전신고 유의사항",
       speaker: "KHNP 이혜진 과장",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/IAEA회의내용 및 사전신고 유의사항_KHNP_이혜진.pdf"],
     },
     {
       time: "17:30-18:00",
@@ -83,7 +87,6 @@ export default function Home() {
       title: "계량관리보고 및 사찰 관련 개선사항 회의",
       speaker: "",
       isHighlighted: false,
-      file: "",
     },
   ];
   const scheduleDataSecond = [
@@ -100,7 +103,7 @@ export default function Home() {
       title: "XML 개요 및 추진 계획",
       speaker: "KINAC 김현진 선임연구원",
       isHighlighted: false,
-      file: "/file/test.pdf",
+      file: ["/file/XML 개요 및 추진계획_KINAC_김현진.pdf"],
     },
     {
       time: "11:00-11:40",
@@ -109,7 +112,6 @@ export default function Home() {
       description: "",
       speaker: "",
       isHighlighted: false,
-      file: "",
     },
   ];
 
