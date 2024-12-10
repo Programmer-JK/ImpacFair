@@ -55,7 +55,7 @@ export default function Home() {
       title: "운영기록 작성 및 사찰 수검",
       speakerInfo: [
         {
-          speaker: "KINAC 이승민 선임연구원",
+          speaker: "KINAC 이승민 책임연구원",
           file: "/file/운영기록 작성 및 사찰 수검_KINAC_이승민.pdf",
         },
       ],
