@@ -17,12 +17,7 @@ export default function Home() {
       time: "13:30-13:40",
       duration: "10'",
       title: "워크숍 개요 및 프로그램 소개",
-      speakerInfo: [
-        {
-          speaker: "사회자",
-          file: "",
-        },
-      ],
+      speakerInfo: [],
       isHighlighted: false,
     },
     {
