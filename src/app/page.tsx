@@ -200,7 +200,7 @@ export default function Home() {
                     </div>
                     <div className="col-span-1">
                       <a
-                        href="/file/test.pdf"
+                        href="/file/IAEA Glossary 2022 번역본_한영병기_KINAC.pdf"
                         download
                         className="flex items-center"
                       >
